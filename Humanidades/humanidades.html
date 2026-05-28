@@ -3,125 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciencias Exactas y Humanidades</title>
+    <title>Libros de Humanidades</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-        />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                    <div class="icons"> 
-                        <i class="fa-solid fa-circle-arrow-left"></i>
-                        <img src="images/logo.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-txt">
-                            <span>Humanidades</span>
-                            <h3>Humanidades II</h3>
-                            <p>
-                                Autor: Colegio de Bachilleres
-                            </p>
-                        </div>
-                        <div class="product-img">
-                            <img src="images/1.jpg" alt="">
-                        </div>
-                    </div>
-                    <a href="https://huelladigital.cbachilleres.edu.mx/secciones/docs/ESTUDIANTES/guias/BE/6to-semestre/SemEs22A/HumanidadesII_22A.pdf" class="btn-1">Ver</a>
-                </div>
-
-                 <div class="swiper-slide">
-                    <div class="icons"> 
-                        <i class="fa-solid fa-circle-arrow-left"></i>
-                        <img src="images/logo.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-txt">
-                            <span>Humanides</span>
-                            <h3>Humanidades I </h3>
-                            <p>
-                                Autor:  YUNUÉN AGUILAR HEREDIA
-                            </p>
-                        </div>
-                        <div class="product-img">
-                            <img src="images/2.jpg" alt="">
-                        </div>
-                    </div>
-                    <a href="https://materiales.sealapiedad.edu.mx/assets/humanidades-1_m%C3%B3dulo-1.pdf" class="btn-1">Ver</a>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="icons"> 
-                        <i class="fa-solid fa-circle-arrow-left"></i>
-                        <img src="images/logo.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-txt">
-                            <span>Humanidades</span>
-                            <h3>Humanidades 1</h3>
-                            <p>
-                                Autor: Nueva Escuela Mexicana
-                            </p>
-                        </div>
-                        <div class="product-img">
-                            <img src="images/3.webp" alt="">
-                        </div>
-                    </div>
-                    <a href="http://certificados.cobao.edu.mx/inc/PRIMERO/HUMANIDADES%201%20%20NUEVA%20ESCUELA%20MEXICANA.pdf" class="btn-1">Ver</a>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="icons"> 
-                        <i class="fa-solid fa-circle-arrow-left"></i>
-                        <img src="images/logo.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-txt">
-                            <span>Humanidades</span>
-                            <h3>Contextos Humanistas</h3>
-                            <p>
-                                Autor: Cuadernos de Sofia
-                            </p>
-                        </div>
-                        <div class="product-img">
-                            <img src="images/4.jpg" alt="">
-                        </div>
-                    </div>
-                    <a href="https://cuadernosdesofia.com/wp-content/plugins/wonderplugin-pdf-embed/pdfjslight/web/viewer.html?v=2&file=https://cuadernosdesofia.com/wp-content/uploads/2022/10/LIBRO-OFICIAL-HUMANIDADES.pdf" class="btn-1">Ver</a>
-                </div>
-
-            </div>
-        </div>
-   
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="swiper-contenedor-libros"></div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new swiper(".mySwiper",{
-            effect:"coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            loop: true,
-            coverflowEffect: {
-                depth:500,
-                modifer:1,
-                slidesShadows:true,
-                rotate: 0,
-                stretch:0
-            }
-        })
-
-    </script>
-
+    <script src="humanidades.js"></script>
 </body>
 </html>

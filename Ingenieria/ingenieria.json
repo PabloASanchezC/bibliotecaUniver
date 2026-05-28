@@ -1,0 +1,18 @@
+[
+  {
+    "subcategoria": "Ingeniería Civil",
+    "titulo": "Geología Aplicada",
+    "autor": "Oscar Plaza Diez",
+    "imagen": "images/1.jpg",
+    "link_descarga": "https://sjnavarro.wordpress.com/wp-content/uploads/2008/09/geologia-aplicada-a-la-ingenieria-civil.pdf",
+    "texto_boton": "Ver"
+  },
+  {
+    "subcategoria": "Ingeniería Civil",
+    "titulo": "Geofísica aplicada en los proyectos básicos de ingeniería civil",
+    "autor": "Alfonso Alvarez Manilla Aceves",
+    "imagen": "images/2.jpg",
+    "link_descarga": "https://www.mediafire.com/file/67uvzlh77bk33vc/Geofisica_Aplicada_en_los_Proyectos_basicos_de_Ingenieria_Civil.pdf",
+    "texto_boton": "Descargar"
+  }
+]
