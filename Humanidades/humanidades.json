@@ -1,5 +1,7 @@
 [
   {
+    "id": 1,
+    "categoria": "Humanidades",
     "subcategoria": "Humanidades",
     "titulo": "Humanidades II",
     "autor": "Colegio de Bachilleres",
@@ -8,6 +10,8 @@
     "texto_boton": "Ver"
   },
   {
+    "id": 2,
+    "categoria": "Humanidades",
     "subcategoria": "Humanidades",
     "titulo": "Humanidades I",
     "autor": "YUNUÉN AGUILAR HEREDIA",
@@ -16,6 +20,8 @@
     "texto_boton": "Ver"
   },
   {
+    "id": 3,
+    "categoria": "Humanidades",
     "subcategoria": "Humanidades",
     "titulo": "Humanidades 1",
     "autor": "Nueva Escuela Mexicana",
@@ -24,6 +30,8 @@
     "texto_boton": "Ver"
   },
   {
+    "id": 4,
+    "categoria": "Humanidades",
     "subcategoria": "Humanidades",
     "titulo": "Contextos Humanistas",
     "autor": "Cuadernos de Sofía",

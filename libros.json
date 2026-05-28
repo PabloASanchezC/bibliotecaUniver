@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "categoria": "Arte",
+    "subcategoria": "Artes Plásticas",
+    "titulo": "Cultura de las Artes Plásticas",
+    "autor": "Supervisión Escolar zona Veracruz",
+    "imagen": "images/1.webp",
+    "url_libro": "https://infolibros.org/pdfview/cultura-de-las-artes-plasticas-supervision-escolar-zona-veracruz-686/",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 2,
+    "categoria": "Arte",
+    "subcategoria": "Artes Plásticas",
+    "titulo": "Ver y Comprender las Artes Plásticas",
+    "autor": "Oscar Morriña y Maria Elena Jubrías",
+    "imagen": "images/2.jpg",
+    "url_libro": "https://infolibros.org/pdfview/ver-y-comprender-las-artes-plasticas-oscar-morrina-y-maria-elena-jubrias-686/",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 3,
+    "categoria": "Arte",
+    "subcategoria": "Libros de Mandalas",
+    "titulo": "50 Mandalas de animales para colorear",
+    "autor": "Docentes al Día",
+    "imagen": "images/3.jpg",
+    "url_libro": "https://infolibros.org/pdfview/50-mandalas-de-animales-para-colorear-docentes-al-dia-206/",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 4,
+    "categoria": "Arte",
+    "subcategoria": "Fotografía",
+    "titulo": "Curso de Fotografía Digital",
+    "autor": "Alfonso Bustos Toldos",
+    "imagen": "images/4.jpg",
+    "url_libro": "https://infolibros.org/pdfview/curso-de-fotografia-digital-alfonso-bustos-toldos-23/",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 5,
+    "categoria": "Humanidades",
+    "subcategoria": "Humanidades",
+    "titulo": "Humanidades II",
+    "autor": "Colegio de Bachilleres",
+    "imagen": "images/1.jpg",
+    "url_libro": "https://huelladigital.cbachilleres.edu.mx/secciones/docs/ESTUDIANTES/guias/BE/6to-semestre/SemEs22A/HumanidadesII_22A.pdf",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 6,
+    "categoria": "Humanidades",
+    "subcategoria": "Humanidades",
+    "titulo": "Humanidades I",
+    "autor": "YUNUÉN AGUILAR HEREDIA",
+    "imagen": "images/2.jpg",
+    "url_libro": "https://materiales.sealapiedad.edu.mx/assets/humanidades-1_m%C3%B3dulo-1.pdf",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 7,
+    "categoria": "Humanidades",
+    "subcategoria": "Humanidades",
+    "titulo": "Humanidades 1",
+    "autor": "Nueva Escuela Mexicana",
+    "imagen": "images/3.webp",
+    "url_libro": "http://certificados.cobao.edu.mx/inc/PRIMERO/HUMANIDADES%201%20%20NUEVA%20ESCUELA%20MEXICANA.pdf",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 8,
+    "categoria": "Humanidades",
+    "subcategoria": "Humanidades",
+    "titulo": "Contextos Humanistas",
+    "autor": "Cuadernos de Sofía",
+    "imagen": "images/4.jpg",
+    "url_libro": "https://cuadernosdesofia.com/wp-content/plugins/wonderplugin-pdf-embed/pdfjslight/web/viewer.html?v=2&file=https://cuadernosdesofia.com/wp-content/uploads/2022/10/LIBRO-OFICIAL-HUMANIDADES.pdf",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 9,
+    "categoria": "Ingeniería",
+    "subcategoria": "Ingeniería Civil",
+    "titulo": "Geología Aplicada",
+    "autor": "Oscar Plaza Diez",
+    "imagen": "images/1.jpg",
+    "url_libro": "https://sjnavarro.wordpress.com/wp-content/uploads/2008/09/geologia-aplicada-a-la-ingenieria-civil.pdf",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 10,
+    "categoria": "Ingeniería",
+    "subcategoria": "Ingeniería Civil",
+    "titulo": "Geofísica aplicada en los proyectos básicos de ingeniería civil",
+    "autor": "Alfonso Alvarez Manilla Aceves",
+    "imagen": "images/2.jpg",
+    "url_libro": "https://www.mediafire.com/file/67uvzlh77bk33vc/Geofisica_Aplicada_en_los_Proyectos_basicos_de_Ingenieria_Civil.pdf",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 11,
+    "categoria": "Salud",
+    "subcategoria": "Medicina",
+    "titulo": "Introducción a la Medicina Interna",
+    "autor": "Tannia Jacqueline Fiallos Mayorga, Diana Lorena Pedrosa Astudillo",
+    "imagen": "images/1.jpg",
+    "url_libro": "https://infolibros.org/pdfview/introduccion-a-la-medicina-interna-tannia-jacqueline-fiallos-mayorga-diana-lorena-pedrosa-astudillo-libros/",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 12,
+    "categoria": "Salud",
+    "subcategoria": "Medicina",
+    "titulo": "Diagnóstico Médico y Atención al Paciente",
+    "autor": "Victoria Magdalena Paladines Rios, Fredy Ramón Monge Plaza, Freddy Leonidas Monge Paladines",
+    "imagen": "images/2.jpg",
+    "url_libro": "https://infolibros.org/pdfview/diagnostico-medico-y-atencion-al-paciente-victoria-magdalena-paladines-rios-fredy-ramon-monge-plaza-freddy-leonidas-monge-paladines-libros/",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 13,
+    "categoria": "Salud",
+    "subcategoria": "Medicina",
+    "titulo": "Anatomía Humana I. Morfología general y miembros",
+    "autor": "Dra. Cristina Verástegui Escolano, Dr. José Fernández Vivero",
+    "imagen": "images/3.jpg",
+    "url_libro": "https://infolibros.org/pdfview/anatomia-humana-i-morfologia-general-y-miembros-dra-cristina-verastegui-escolano-dr-jose-fernandez-vivero-libros/",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 14,
+    "categoria": "Salud",
+    "subcategoria": "Medicina",
+    "titulo": "Fisiopatología del Cuerpo Humano",
+    "autor": "Julio Villalobos Hidalgo",
+    "imagen": "images/4.jpg",
+    "url_libro": "https://infolibros.org/pdfview/fisiopatologia-del-cuerpo-humano-julio-villalobos-hidalgo-libros/",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 15,
+    "categoria": "cNaturales",
+    "subcategoria": "Ciencias Naturales",
+    "titulo": "Ciencias Naturales I",
+    "autor": "Silvia Armani, Adriana Cacciavillani, Cristina Zamorano, Alejandra Acevedo",
+    "imagen": "images/1.webp",
+    "url_libro": "https://infolibros.org/pdfview/25577-ciencias-naturales-i-silvia-armani-adriana-cacciavillani-cristina-zamorano-alejandra-acevedo/",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 16,
+    "categoria": "cNaturales",
+    "subcategoria": "Ciencias Naturales",
+    "titulo": "Ciencias Naturales 9. Texto del Estudiante",
+    "autor": "Ana Cristina Villalba Batallas",
+    "imagen": "images/2.jpg",
+    "url_libro": "https://infolibros.org/pdfview/25578-ciencias-naturales-9-texto-del-estudiante-ana-cristina-villalba-batallas/",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 17,
+    "categoria": "cNaturales",
+    "subcategoria": "Ciencias Naturales",
+    "titulo": "Ciencias Naturales Básica Superior. 8.º, 9.º y 10.º Grado",
+    "autor": "Byron Patricio Villarreal Ramírez, Freddy Tituaña, Andrea Paola Zárate Oviedo",
+    "imagen": "images/3.webp",
+    "url_libro": "https://infolibros.org/pdfview/25580-ciencias-naturales-basica-superior-8-9-y-10-grado-byron-patricio-villarreal-ramirez-freddy-tituana-andrea-paola-zarate-oviedo/",
+    "texto_boton": "Ver"
+  },
+  {
+    "id": 18,
+    "categoria": "cNaturales",
+    "subcategoria": "Ciencias Naturales",
+    "titulo": "Ciencias Naturales. Material de Apoyo, Octavo Grado",
+    "autor": "USAID",
+    "imagen": "images/4.webp",
+    "url_libro": "https://infolibros.org/pdfview/25579-ciencias-naturales-material-de-apoyo-octavo-grado-usaid/",
+    "texto_boton": "Ver"
+  }
+]

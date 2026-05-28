@@ -1,5 +1,7 @@
 [
   {
+    "id": 11,
+    "categoria": "Salud",
     "subcategoria": "Medicina",
     "titulo": "Introducción a la Medicina Interna",
     "autor": "Tannia Jacqueline Fiallos Mayorga, Diana Lorena Pedrosa Astudillo",
@@ -8,6 +10,8 @@
     "texto_boton": "Ver"
   },
   {
+    "id": 12,
+    "categoria": "Salud",
     "subcategoria": "Medicina",
     "titulo": "Diagnóstico Médico y Atención al Paciente",
     "autor": "Victoria Magdalena Paladines Rios, Fredy Ramón Monge Plaza, Freddy Leonidas Monge Paladines",
@@ -16,6 +20,8 @@
     "texto_boton": "Ver"
   },
   {
+    "id": 13,
+    "categoria": "Salud",
     "subcategoria": "Medicina",
     "titulo": "Anatomía Humana I. Morfología general y miembros",
     "autor": "Dra. Cristina Verástegui Escolano, Dr. José Fernández Vivero",
@@ -24,6 +30,8 @@
     "texto_boton": "Ver"
   },
   {
+    "id": 14,
+    "categoria": "Salud",
     "subcategoria": "Medicina",
     "titulo": "Fisiopatología del Cuerpo Humano",
     "autor": "Julio Villalobos Hidalgo",

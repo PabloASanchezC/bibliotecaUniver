@@ -1,3 +1,4 @@
+/* Importación de tipografías */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -8,14 +9,31 @@
     list-style: none;
 }
 
+/* ==========================================================================
+   VARIABLES GLOBALES DE COLOR
+   ========================================================================== */
 :root {
     --fondo: #dff2fd;
     --fondoacent: #b0d8f0;
+    --primario: #000080; /* Azul marino usado en botones y textos de los libros */
+    --secundario: #111111; /* Negro para textos generales y títulos */
+    --blanco: #FFFFFF;
+    --sombra: rgba(0, 0, 0, 0.1);
+    --sombra-fuerte: rgba(0, 0, 0, 0.4); /* Usado en el carrusel 3D */
+}
+
+/* ==========================================================================
+   ESTILOS BASE
+   ========================================================================== */
+html, body {
+    position: relative;
+    height: 100%;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
+    color: var(--secundario);
 }
 
 img {
@@ -26,7 +44,7 @@ img {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px; /* Previene que el contenido toque los bordes físicos en pantallas medianas */
+    padding: 0 20px;
 }
 
 h2 {
@@ -34,7 +52,7 @@ h2 {
 }
 
 /* ==========================================================================
-   HEADER & NAVBAR
+   HEADER & NAVBAR (Página Principal)
    ========================================================================== */
 .header {
     display: flex;
@@ -60,7 +78,7 @@ h2 {
 
 .logo {
     font-size: 25px;
-    color: black;
+    color: var(--secundario);
     text-transform: uppercase;
     font-weight: 800;
 }
@@ -76,7 +94,7 @@ h2 {
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 10px 20px;
-    color: black;
+    color: var(--secundario);
     display: block;
     font-weight: 500;
 }
@@ -89,59 +107,16 @@ h2 {
     width: 25px;
 }
 
-/* Estilo responsivo para el disparador del menú */
 .menu label {
     cursor: pointer;
     display: none;
     font-size: 30px;
-    color: black;
+    color: var(--secundario);
     line-height: 1;
 }
 
-/* Inyecta el símbolo de hamburguesa de forma limpia en el label vacío */
 .menu label::after {
     content: "\2630";
-}
-
-/* ==========================================================================
-   CARRITO / SUBMENU (PRESERVADO)
-   ========================================================================== */
-.submenu {
-   position: relative;
-}
-
-.submenu #carrito { 
-    display: none;
-}
-
-.submenu:hover #carrito {
-    display: block;
-    position: absolute;
-    right: 0;
-    backdrop-filter: blur(10px);
-    top: 100%;
-    z-index: 1;
-    background-color: blanchedalmond;
-    padding: 20px;
-    min-width: 400px;
-}
-
-table {
-    width: 100%;
-}
-
-th, td {
-    color: #FFFFFF;
-}
-
-.borrar {
-    background-color: black;
-    border-radius: 50%;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 800;
-    cursor: pointer;
 }
 
 /* ==========================================================================
@@ -154,7 +129,7 @@ th, td {
     flex: 1;
     padding: 16px 96px;
     border-radius: 8px;
-    background-color: #FFFFFF;
+    background-color: var(--blanco);
     width: 100%;
 }
 
@@ -172,7 +147,7 @@ th, td {
     font-size: 90px;
     text-transform: uppercase;
     line-height: 1;
-    color: black;
+    color: var(--secundario);
     font-family: 'Oswald', sans-serif;
     margin-bottom: 15px;
 }
@@ -186,67 +161,13 @@ th, td {
 .btn-1 {
     display: inline-block;
     padding: 11px 25px;
-    background-color: black;
-    color: #FFFFFF;
+    background-color: var(--secundario);
+    color: var(--blanco);
     border-radius: 5px;
 }
 
 /* ==========================================================================
-   OFERTAS
-   ========================================================================== */
-.ofert {
-    padding: 20px 0 0 0;
-    display: flex;
-    justify-content: space-between;
-}
-
-.ofert-1 { 
-    display: flex;
-    align-items: center;
-    flex-basis: calc(33.3% - 15px);
-    background-color: #f5f5f5;
-    padding: 35px;
-}
-
-.ofert-img {
-    flex-basis: 50%;
-    margin-right: 15px; 
-}
-
-.ofert-img img {
-    width: 250px;
-}
-
-.ofert-txt {
-    flex-basis: 50%;
-    text-align: center;
-}
-
-.ofert-txt h3 {
-    color: black;
-    font-family: 'Oswald', sans-serif;
-    font-size: 25px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-
-.btn-2 {
-    display: inline-block;
-    padding: 7px 10px;
-    background-color: #000080;
-    color: #FFFFFF;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 600;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.btn-2:hover {
-    background-color: #00004d;
-}
-
-/* ==========================================================================
-   PRODUCTOS / CATEGORIAS
+   PRODUCTOS / CATEGORIAS (Grid del Inicio)
    ========================================================================== */
 .products-container {
      padding: 60px 20px;
@@ -255,7 +176,7 @@ th, td {
 }
 
 .products-container h2 {
-    color: #111111;
+    color: var(--secundario);
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
     text-transform: uppercase;
@@ -271,9 +192,9 @@ th, td {
 .product {
     text-align: center;
     padding: 30px;
-    background-color: #FFFFFF;
+    background-color: var(--blanco);
     border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 15px var(--sombra);
     transition: transform 0.3s ease;
 }
 
@@ -285,113 +206,132 @@ th, td {
     width: 100%;
     max-width: 220px;
     height: 260px;
-    object-fit: contain; /* Mantiene la proporción de los libros sin cortarlos */
+    object-fit: contain;
     margin-bottom: 20px;
 }
 
 .product h3 {
     font-size: 20px;
-    color: #111111;
+    color: var(--secundario);
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
 
-.product p, .precio {
+.product p {
     font-size: 16px;
     color: #444444;
     margin-bottom: 15px;
 }
 
-.precio {
-     font-weight: 800;
+.btn-2 {
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: var(--primario);
+    color: var(--blanco);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-2:hover {
+    background-color: #00004d; /* Azul más oscuro al pasar el mouse */
 }
 
 /* ==========================================================================
-   INFO ICONS, BLOG & FOOTER
+   CARRUSEL SWIPER 3D (Subpáginas de Materias)
    ========================================================================== */
+.swiper {
+    width: 100%;
+    padding: 100px 0 50px 0; /* Ajustado el padding top para centrar mejor en móviles */
+}
+
+.swiper-slide {
+    width: 300px;
+    height: 500px;
+    background-color: var(--blanco);
+    box-shadow: 0 0 20px var(--sombra-fuerte);
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px; /* Un ligero borde redondeado para suavizar las tarjetas 3D */
+}
+
 .icons {
-    padding: 60px 0;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-}
-
-.icon-1 {
-    flex-basis: calc(33.3% - 14px);
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 25px;
-    background-color: #FFFFFF;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    margin-bottom: 40px;
 }
 
-.icon-txt h3 {
+.icons i {
     font-size: 20px;
-    color: #111111;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
+    color: var(--primario);
+    cursor: pointer;
 }
 
-.icon-txt p {
-    font-size: 16px;
-    color: #111111;
+.icons img {
+    width: 120px;
 }
 
-.blog {
+/* Modificamos esta clase para no chocar con el grid del inicio */
+.swiper-slide .product-content {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 100px;
-    gap: 20px;
+    align-items: flex-start; /* Evita que el texto y la imagen se estiren feo */
 }
 
-.blog-1 {
-    flex-basis: calc(33.3% - 14px);
+.swiper-slide .product-txt {
+    flex-basis: 50%;
+    text-align: left;
 }
 
-.blog-1 img {
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-.blog-1 h3 {
-    font-size: 20px;
-    color: #111111;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-
-.blog-1 p {
-    font-size: 16px;
-    color: #111111;
-}
-
-.footer {
-    padding: 50px 0;
-    background-color: #111111;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.link h3 {
-    font-size: 18px;
-    color: #FFFFFF;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.link a {
-    font-size: 16px;
-    color: #dcdcdc;
-    display: block;
+.swiper-slide .product-txt span {
+    font-size: 20px; /* Reducido un poco para que no rompa el diseño si el nombre es largo */
+    color: var(--primario);
+    font-weight: bold;
+    display: block; /* Asegura que baje de línea */
     margin-bottom: 10px;
+}
+
+.swiper-slide .product-txt h3 {
+    font-size: 18px;
+    color: var(--primario);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.swiper-slide .product-txt p {
+    font-size: 14px;
+    color: var(--secundario);
+}
+
+.swiper-slide .product-img {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.swiper-slide .product-img img {
+    width: 120px;
+    object-fit: contain;
+}
+
+.btn-swiper {
+    display: inline-block;
+    padding: 13px 55px;
+    border: 1px solid var(--primario);
+    background-color: transparent; /* Fondo transparente por defecto */
+    border-radius: 25px;
+    color: var(--primario);
+    text-decoration: none;
+    margin-top: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-swiper:hover {
+    background-color: var(--primario);
+    color: var(--blanco);
 }
 
 /* ==========================================================================
@@ -405,7 +345,7 @@ th, td {
     }
 
     .menu label {
-        display: block; /* Revela el botón de menú hamburguesa */
+        display: block; 
     }
 
     .menu .navbar {
@@ -428,21 +368,17 @@ th, td {
     }
 
     .menu .navbar ul li a {
-        color: #FFFFFF;
+        color: var(--blanco);
         padding: 15px 20px;
         border-bottom: 1px solid #282828;
     }
 
     #menu:checked ~ .navbar {
-        display: block; /* Despliega el menú al dar clic */
+        display: block; 
     }
 
     .logo {
         display: none;
-    }
-
-    .submenu:hover #carrito {
-        min-width: 100%;
     }
 
     .header {
@@ -469,19 +405,8 @@ th, td {
         font-size: 55px;
     }
 
-    .ofert {
-        padding: 20px;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .ofert-1 {
-        margin-bottom: 0;
-        width: 100%;
-    }
-
     .product-content {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet se ve balanceado */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 25px;
     }
 
@@ -490,38 +415,10 @@ th, td {
         max-width: 180px;
         height: 220px;
     }
-
-    .icons {
-        padding: 30px 20px;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .icon-1 {
-        margin-bottom: 0;
-        width: 100%;
-    }
-
-    .blog {
-        padding: 20px;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .blog-1 {
-        margin-bottom: 0;
-        width: 100%;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
 }
 
 @media (max-width: 650px) {
     .product-content {
-        grid-template-columns: 1fr; /* 1 sola columna para pantallas compactas de celulares */
+        grid-template-columns: 1fr; 
     }
 }

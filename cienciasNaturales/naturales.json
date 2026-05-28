@@ -1,5 +1,7 @@
 [
   {
+    "id": 15,
+    "categoria": "Ciencias Naturales",
     "subcategoria": "Ciencias Naturales",
     "titulo": "Ciencias Naturales I",
     "autor": "Silvia Armani, Adriana Cacciavillani, Cristina Zamorano, Alejandra Acevedo",
@@ -8,6 +10,8 @@
     "texto_boton": "Ver"
   },
   {
+    "id": 16,
+    "categoria": "Ciencias Naturales",
     "subcategoria": "Ciencias Naturales",
     "titulo": "Ciencias Naturales 9. Texto del Estudiante",
     "autor": "Ana Cristina Villalba Batallas",
@@ -16,6 +20,8 @@
     "texto_boton": "Ver"
   },
   {
+    "id": 17,
+    "categoria": "Ciencias Naturales",
     "subcategoria": "Ciencias Naturales",
     "titulo": "Ciencias Naturales Básica Superior. 8.º, 9.º y 10.º Grado",
     "autor": "Byron Patricio Villarreal Ramírez, Freddy Tituaña, Andrea Paola Zárate Oviedo",
@@ -24,6 +30,8 @@
     "texto_boton": "Ver"
   },
   {
+    "id": 18,
+    "categoria": "Ciencias Naturales",
     "subcategoria": "Ciencias Naturales",
     "titulo": "Ciencias Naturales. Material de Apoyo, Octavo Grado",
     "autor": "USAID",

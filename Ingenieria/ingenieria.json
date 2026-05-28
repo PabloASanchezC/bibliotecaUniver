@@ -1,5 +1,7 @@
 [
   {
+    "id": 9,
+    "categoria": "Ingeniería",
     "subcategoria": "Ingeniería Civil",
     "titulo": "Geología Aplicada",
     "autor": "Oscar Plaza Diez",
@@ -8,6 +10,8 @@
     "texto_boton": "Ver"
   },
   {
+    "id": 10,
+    "categoria": "Ingeniería",
     "subcategoria": "Ingeniería Civil",
     "titulo": "Geofísica aplicada en los proyectos básicos de ingeniería civil",
     "autor": "Alfonso Alvarez Manilla Aceves",
