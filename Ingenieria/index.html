@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros de ingenieria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="icons"> 
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="images/logo.png" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>Ingenieria Civil</span>
+                            <h3>Geologia Aplicada</h3>
+                            <p>
+                                Autor: Oscar Plaza Diez
+                            </p>
+                        </div>
+                        <div class="product-img">
+                            <img src="images/1.jpg" alt="">
+                        </div>
+                    </div>
+                    <a href="https://sjnavarro.wordpress.com/wp-content/uploads/2008/09/geologia-aplicada-a-la-ingenieria-civil.pdf" class="btn-1">Ver</a>
+                </div>
+
+                 <div class="swiper-slide">
+                    <div class="icons"> 
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="images/logo.png" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>Ingenieria Civil</span>
+                            <h3>Geofísica aplicada en los proyectos básicos de ingeniería civil </h3>
+                            <p>
+                                Autor:  Alfonso Alvarez Manilla Aceves
+                            </p>
+                        </div>
+                        <div class="product-img">
+                            <img src="images/2.jpg" alt="">
+                        </div>
+                    </div>
+                    <a href="https://www.mediafire.com/file/67uvzlh77bk33vc/Geofi%CC%81sica_Aplicada_en_los_Proyectos_ba%CC%81sicos_de_Ingenieri%CC%81a_Civil.pdf" class="btn-1">Descargar</a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="icons"> 
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="images/logo.png" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>Ingenieria Civil</span>
+                            <h3>Espesores de concreto</h3>
+                            <p>
+                                Autor: Desconocido
+                            </p>
+                        </div>
+                        <div class="product-img">
+                            <img src="images/3.jpg" alt="">
+                        </div>
+                    </div>
+                    <a href="https://www.mediafire.com/file/4jiatd6cfii8tgf/Dise%C3%B1o_de_Espesores_de_Pavimentos_de_Concreto.zip" class="btn-1">Descargar</a>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="icons"> 
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="images/logo.png" alt="">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-txt">
+                            <span>Ingenieria Civil</span>
+                            <h3>Técnicas de reparación y refuerzo de estructuras de hormigón armado y Albañilerías</h3>
+                            <p>
+                                Autor: Instituto Chileno del Cemento
+                            </p>
+                        </div>
+                        <div class="product-img">
+                            <img src="images/4.jpg" alt="">
+                        </div>
+                    </div>
+                    <a href="https://www.mediafire.com/file/uzzcvsbdnxt61ht/Te%25CC%2581cnicas_de_reparacio%25CC%2581n_y_refuerzo_de_estructuras_de_hormigo%25CC%2581n_armado_y_Alban%25CC%2583ileri%25CC%2581as_.pdf/file" class="btn-1">Descargar</a>
+                </div>
+
+            </div>
+        </div>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new swiper(".mySwiper",{
+            effect:"coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            coverflowEffect: {
+                depth:500,
+                modifer:1,
+                slidesShadows:true,
+                rotate: 0,
+                stretch:0
+            }
+        })
+
+    </script>
+
+</body>
+</html>
