@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contenedor = document.getElementById('swiper-contenedor-libros');
 
     // 1. Leer los libros desde el archivo JSON de la carpeta
-    fetch('ingenierias.json')
+    fetch('ingenieria.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error("No se pudo cargar el archivo de libros de ingenierias");
