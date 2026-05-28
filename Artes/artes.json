@@ -1,0 +1,34 @@
+[
+  {
+    "subcategoria": "Artes Plásticas",
+    "titulo": "Cultura de las Artes Plásticas",
+    "autor": "Supervisión Escolar zona Veracruz",
+    "imagen": "images/1.webp",
+    "url_libro": "https://infolibros.org/pdfview/cultura-de-las-artes-plasticas-supervision-escolar-zona-veracruz-686/",
+    "texto_boton": "Ver"
+  },
+  {
+    "subcategoria": "Artes Plásticas",
+    "titulo": "Ver y Comprender las Artes Plásticas",
+    "autor": "Oscar Morriña y Maria Elena Jubrías",
+    "imagen": "images/2.jpg",
+    "url_libro": "https://infolibros.org/pdfview/ver-y-comprender-las-artes-plasticas-oscar-morrina-y-maria-elena-jubrias-686/",
+    "texto_boton": "Ver"
+  },
+  {
+    "subcategoria": "Libros de Mandalas",
+    "titulo": "50 Mandalas de animales para colorear",
+    "autor": "Docentes al Día",
+    "imagen": "images/3.jpg",
+    "url_libro": "https://infolibros.org/pdfview/50-mandalas-de-animales-para-colorear-docentes-al-dia-206/",
+    "texto_boton": "Ver"
+  },
+  {
+    "subcategoria": "Fotografía",
+    "titulo": "Curso de Fotografía Digital",
+    "autor": "Alfonso Bustos Toldos",
+    "imagen": "images/4.jpg",
+    "url_libro": "https://infolibros.org/pdfview/curso-de-fotografia-digital-alfonso-bustos-toldos-23/",
+    "texto_boton": "Ver"
+  }
+]

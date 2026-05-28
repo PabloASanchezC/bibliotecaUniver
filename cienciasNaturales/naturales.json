@@ -1,0 +1,34 @@
+[
+  {
+    "subcategoria": "Ciencias Naturales",
+    "titulo": "Ciencias Naturales I",
+    "autor": "Silvia Armani, Adriana Cacciavillani, Cristina Zamorano, Alejandra Acevedo",
+    "imagen": "images/1.webp",
+    "url_libro": "https://infolibros.org/pdfview/25577-ciencias-naturales-i-silvia-armani-adriana-cacciavillani-cristina-zamorano-alejandra-acevedo/",
+    "texto_boton": "Ver"
+  },
+  {
+    "subcategoria": "Ciencias Naturales",
+    "titulo": "Ciencias Naturales 9. Texto del Estudiante",
+    "autor": "Ana Cristina Villalba Batallas",
+    "imagen": "images/2.jpg",
+    "url_libro": "https://infolibros.org/pdfview/25578-ciencias-naturales-9-texto-del-estudiante-ana-cristina-villalba-batallas/",
+    "texto_boton": "Ver"
+  },
+  {
+    "subcategoria": "Ciencias Naturales",
+    "titulo": "Ciencias Naturales Básica Superior. 8.º, 9.º y 10.º Grado",
+    "autor": "Byron Patricio Villarreal Ramírez, Freddy Tituaña, Andrea Paola Zárate Oviedo",
+    "imagen": "images/3.webp",
+    "url_libro": "https://infolibros.org/pdfview/25580-ciencias-naturales-basica-superior-8-9-y-10-grado-byron-patricio-villarreal-ramirez-freddy-tituana-andrea-paola-zarate-oviedo/",
+    "texto_boton": "Ver"
+  },
+  {
+    "subcategoria": "Ciencias Naturales",
+    "titulo": "Ciencias Naturales. Material de Apoyo, Octavo Grado",
+    "autor": "USAID",
+    "imagen": "images/4.webp",
+    "url_libro": "https://infolibros.org/pdfview/25579-ciencias-naturales-material-de-apoyo-octavo-grado-usaid/",
+    "texto_boton": "Ver"
+  }
+]

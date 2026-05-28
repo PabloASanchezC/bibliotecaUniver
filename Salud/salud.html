@@ -5,123 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciencias de la Salud</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-        />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                    <div class="icons"> 
-                        <i class="fa-solid fa-circle-arrow-left"></i>
-                        <img src="images/logo.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-txt">
-                            <span>Medicina</span>
-                            <h3>Introducción a la Medicina Interna</h3>
-                            <p>
-                                Autor: Tannia Jacqueline Fiallos Mayorga, Diana Lorena Pedrosa Astudillo
-                            </p>
-                        </div>
-                        <div class="product-img">
-                            <img src="images/1.jpg" alt="">
-                        </div>
-                    </div>
-                    <a href="https://infolibros.org/pdfview/introduccion-a-la-medicina-interna-tannia-jacqueline-fiallos-mayorga-diana-lorena-pedrosa-astudillo-libros/" class="btn-1">Ver</a>
-                </div>
-
-                 <div class="swiper-slide">
-                    <div class="icons"> 
-                        <i class="fa-solid fa-circle-arrow-left"></i>
-                        <img src="images/logo.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-txt">
-                            <span>Medicina</span>
-                            <h3>Diagnóstico Médico y Atención al Paciente </h3>
-                            <p>
-                                Autor: Victoria Magdalena Paladines Rios, Fredy Ramón Monge Plaza, Freddy Leonidas Monge Paladines
-                            </p>
-                        </div>
-                        <div class="product-img">
-                            <img src="images/2.jpg" alt="">
-                        </div>
-                    </div>
-                    <a href="https://infolibros.org/pdfview/diagnostico-medico-y-atencion-al-paciente-victoria-magdalena-paladines-rios-fredy-ramon-monge-plaza-freddy-leonidas-monge-paladines-libros/" class="btn-1">Ver</a>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="icons"> 
-                        <i class="fa-solid fa-circle-arrow-left"></i>
-                        <img src="images/logo.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-txt">
-                            <span>Medicina</span>
-                            <h3>Anatomía Humana I. Morfología general y miembros</h3>
-                            <p>
-                                Autor: Dra. Cristina Verástegui Escolano, Dr. José Fernández Vivero
-                            </p>
-                        </div>
-                        <div class="product-img">
-                            <img src="images/3.jpg" alt="">
-                        </div>
-                    </div>
-                    <a href="https://infolibros.org/pdfview/anatomia-humana-i-morfologia-general-y-miembros-dra-cristina-verastegui-escolano-dr-jose-fernandez-vivero-libros/" class="btn-1">Ver</a>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="icons"> 
-                        <i class="fa-solid fa-circle-arrow-left"></i>
-                        <img src="images/logo.png" alt="">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="product-content">
-                        <div class="product-txt">
-                            <span>Medicina</span>
-                            <h3>Fisiopatología del Cuerpo Humano</h3>
-                            <p>
-                                Autor: Julio Villalobos Hidalgo
-                            </p>
-                        </div>
-                        <div class="product-img">
-                            <img src="images/4.jpg" alt="">
-                        </div>
-                    </div>
-                    <a href="https://infolibros.org/pdfview/fisiopatologia-del-cuerpo-humano-julio-villalobos-hidalgo-libros/" class="btn-1">Ver</a>
-                </div>
-
-            </div>
-        </div>
-   
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="swiper-contenedor-libros"></div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new swiper(".mySwiper",{
-            effect:"coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            loop: true,
-            coverflowEffect: {
-                depth:500,
-                modifer:1,
-                slidesShadows:true,
-                rotate: 0,
-                stretch:0
-            }
-        })
-
-    </script>
-
+    <script src="salud.js"></script>
 </body>
 </html>
