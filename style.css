@@ -1,147 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*
-.poppins-thin {
-  font-family: "Poppins", serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-*/
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
-body{
+
+:root {
+    --fondo: #dff2fd;
+    --fondoacent: #b0d8f0;
+}
+
+body {
     font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
 }
 
-img{
+img {
     max-width: 100%;
+    height: auto;
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px; /* Previene que el contenido toque los bordes físicos en pantallas medianas */
 }
 
+h2 {
+    padding-bottom: 8px;
+}
 
-.header{
+/* ==========================================================================
+   HEADER & NAVBAR
+   ========================================================================== */
+.header {
     display: flex;
     align-items: center;
-    min-height: 80vh;
-    background-color: #FFFFFF;
+    min-height: 50vh;
+    background-color: var(--fondo);
     padding: 70px 0;
-
+    box-shadow: inset 0px -1px 15px 0px #8dbedb;
+    position: relative;
 }
 
-.menu{
+.menu {
     position: absolute;
     top: 0;
     left: 0;
@@ -149,47 +54,67 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 0;
+    z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 25px;
     color: black;
     text-transform: uppercase;
     font-weight: 800;
 }
 
-.menu .navbar ul li{
-    position: relative;
-    float: left;
+.menu .navbar ul {
+    display: flex;
 }
 
-.menu .navbar ul li a{
+.menu .navbar ul li {
+    position: relative;
+}
+
+.menu .navbar ul li a {
     font-size: 18px;
-    padding: 20px;
+    padding: 10px 20px;
     color: black;
     display: block;
+    font-weight: 500;
 }
 
-#menu{
+#menu {
     display: none;
 }
 
 .menu-icono {
     width: 25px;
 }
+
+/* Estilo responsivo para el disparador del menú */
 .menu label {
     cursor: pointer;
     display: none;
+    font-size: 30px;
+    color: black;
+    line-height: 1;
 }
 
+/* Inyecta el símbolo de hamburguesa de forma limpia en el label vacío */
+.menu label::after {
+    content: "\2630";
+}
+
+/* ==========================================================================
+   CARRITO / SUBMENU (PRESERVADO)
+   ========================================================================== */
 .submenu {
    position: relative;
 }
+
 .submenu #carrito { 
     display: none;
 }
 
-.submenu:hover #carrito{
+.submenu:hover #carrito {
     display: block;
     position: absolute;
     right: 0;
@@ -201,14 +126,15 @@ img{
     min-width: 400px;
 }
 
-table{
+table {
     width: 100%;
 }
-th,td{
+
+th, td {
     color: #FFFFFF;
 }
 
-.borrar{
+.borrar {
     background-color: black;
     border-radius: 50%;
     padding: 5px 10px;
@@ -216,28 +142,30 @@ th,td{
     color: #FFFFFF;
     font-weight: 800;
     cursor: pointer;
-
 }
 
+/* ==========================================================================
+   HERO / HEADER CONTENT
+   ========================================================================== */
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex: 1;
-    padding: 0 200px;
-
+    padding: 16px 96px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    width: 100%;
 }
 
 .header-img {
-    flex-basis: 50%;
+    flex-basis: 36%;
     text-align: center;
-
 }
 
 .header-txt {
     flex-basis: 50%;
     text-align: center;
-
 }
 
 .header-txt h1 {
@@ -247,7 +175,6 @@ th,td{
     color: black;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 15px;
-
 }
 
 .header-txt p {
@@ -264,6 +191,9 @@ th,td{
     border-radius: 5px;
 }
 
+/* ==========================================================================
+   OFERTAS
+   ========================================================================== */
 .ofert {
     padding: 20px 0 0 0;
     display: flex;
@@ -273,22 +203,18 @@ th,td{
 .ofert-1 { 
     display: flex;
     align-items: center;
-    flex-basis:calc(33.3% - 15px);
+    flex-basis: calc(33.3% - 15px);
     background-color: #f5f5f5;
     padding: 35px;
-
 }
 
 .ofert-img {
     flex-basis: 50%;
     margin-right: 15px; 
-
-
 }
 
 .ofert-img img {
     width: 250px;
-
 }
 
 .ofert-txt {
@@ -298,7 +224,7 @@ th,td{
 
 .ofert-txt h3 {
     color: black;
-    font-family: 'Oswald', sams-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 25px;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -311,50 +237,69 @@ th,td{
     color: #FFFFFF;
     border-radius: 5px;
     font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
 }
 
+.btn-2:hover {
+    background-color: #00004d;
+}
+
+/* ==========================================================================
+   PRODUCTOS / CATEGORIAS
+   ========================================================================== */
 .products-container {
-     padding: 50px 0;
+     padding: 60px 20px;
      text-align: center;
+     background-color: var(--fondoacent);
 }
 
-.products h2 {
+.products-container h2 {
     color: #111111;
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .product-content {
     display: grid;
-    grid-template-columns: repeat(3,  1fr);
-    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
 
-.product{
+.product {
     text-align: center;
     padding: 30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
 }
 
 .product img {
-    width: 250px;
-    height: 370px;
+    width: 100%;
+    max-width: 220px;
+    height: 260px;
+    object-fit: contain; /* Mantiene la proporción de los libros sin cortarlos */
     margin-bottom: 20px;
 }
 
 .product h3 {
     font-size: 20px;
     color: #111111;
-    font-family: 'Oswald' , sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
 
 .product p, .precio {
     font-size: 16px;
-    color: #111111;
+    color: #444444;
     margin-bottom: 15px;
 }
 
@@ -362,20 +307,25 @@ th,td{
      font-weight: 800;
 }
 
+/* ==========================================================================
+   INFO ICONS, BLOG & FOOTER
+   ========================================================================== */
 .icons {
-    padding: 50px 0 100px 0;
+    padding: 60px 0;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .icon-1 {
-    flex-basis: calc(33.3% - 30px);
+    flex-basis: calc(33.3% - 14px);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 25px;
     background-color: #FFFFFF;
-
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
 }
 
 .icon-txt h3 {
@@ -394,33 +344,36 @@ th,td{
     display: flex;
     justify-content: space-between;
     padding-bottom: 100px;
+    gap: 20px;
 }
 
 .blog-1 {
-    flex-basis: calc(33.3% - 30px);
+    flex-basis: calc(33.3% - 14px);
 }
 
 .blog-1 img {
     margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 .blog-1 h3 {
-    font-size:  20px;
+    font-size: 20px;
     color: #111111;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    margin-bottom:  15px;
+    margin-bottom: 15px;
 }
 
-.blog-1 p{
+.blog-1 p {
     font-size: 16px;
     color: #111111;
 }
 
 .footer {
-    padding:  50px 0;
+    padding: 50px 0;
     background-color: #111111;
 }
+
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -441,14 +394,18 @@ th,td{
     margin-bottom: 10px;
 }
 
-@media (max-width:991px) { 
-
+/* ==========================================================================
+   DISEÑO RESPONSIVO (MEDIA QUERIES)
+   ========================================================================== */
+@media (max-width: 991px) { 
     .menu {
         padding: 20px;
+        position: relative;
+        background-color: var(--fondo);
     }
 
     .menu label {
-        display: initial;
+        display: block; /* Revela el botón de menú hamburguesa */
     }
 
     .menu .navbar {
@@ -458,6 +415,12 @@ th,td{
         right: 0;
         background-color: #181818;
         display: none;
+        z-index: 200;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
     }
 
     .menu .navbar ul li {
@@ -466,11 +429,12 @@ th,td{
 
     .menu .navbar ul li a {
         color: #FFFFFF;
-
+        padding: 15px 20px;
+        border-bottom: 1px solid #282828;
     }
 
     #menu:checked ~ .navbar {
-        display: initial;
+        display: block; /* Despliega el menú al dar clic */
     }
 
     .logo {
@@ -482,11 +446,14 @@ th,td{
     }
 
     .header {
-        min-height: 0vh;
+        min-height: auto;
+        padding: 40px 0;
     }
+
     .header-content {
-        padding:  50px 0;
+        padding: 40px 20px;
         flex-direction: column;
+        gap: 20px;
     }
 
     .header-img {
@@ -499,62 +466,62 @@ th,td{
     }
 
     .header-txt h1 {
-        font-size:  70px;
+        font-size: 55px;
     }
+
     .ofert {
-        padding:  30px 30px 0 30px;
-        flex-direction:  column;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .ofert-1 {
-        margin-bottom: 30px;
-    }
-
-    .products {
-        padding: 0 30px 30px 30px;
-    }
-
-    .products h2{
-        margin-bottom: 30px;
+        margin-bottom: 0;
+        width: 100%;
     }
 
     .product-content {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet se ve balanceado */
+        gap: 25px;
     }
 
     .product img {
-        width: 200px;
-        height: 280px;
-        
+        width: 100%;
+        max-width: 180px;
+        height: 220px;
     }
 
     .icons {
-        padding: 30px;
+        padding: 30px 20px;
         flex-direction: column;
+        gap: 20px;
     }
 
     .icon-1 {
-        margin-bottom: 30px;
-
+        margin-bottom: 0;
+        width: 100%;
     }
 
     .blog {
-        padding: 0 30px 30px 30px;
+        padding: 20px;
         flex-direction: column;
+        gap: 30px;
     }
 
     .blog-1 {
-        margin-bottom: 30px;
+        margin-bottom: 0;
+        width: 100%;
     }
 
-    .footer {
-        padding: 30px;
-    }
-    
     .footer-content {
         flex-direction: column;
         text-align: center;
+        gap: 30px;
+    }
+}
 
+@media (max-width: 650px) {
+    .product-content {
+        grid-template-columns: 1fr; /* 1 sola columna para pantallas compactas de celulares */
     }
 }
