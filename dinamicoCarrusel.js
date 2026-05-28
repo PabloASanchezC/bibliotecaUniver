@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // 2. Hacer fetch al JSON centralizado (subimos un nivel '../' porque el JS corre desde la subcarpeta)
-    fetch('./libros.json')
+    // 2. Hacer fetch al JSON
+    fetch('libros.json')
         .then(response => {
             if (!response.ok) throw new Error("No se pudo cargar el archivo central de la biblioteca");
             return response.json();
