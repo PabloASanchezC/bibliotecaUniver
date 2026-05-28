@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 2. Hacer fetch al JSON
-    fetch('libros.json')
+    fetch('../libros.json')
         .then(response => {
             if (!response.ok) throw new Error("No se pudo cargar el archivo central de la biblioteca");
             return response.json();
