@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const contenedor = document.getElementById('swiper-contenedor-libros');
     
-    // 1. Detectar automáticamente en qué página estamos parados
+    // Detectar automáticamente en qué página estamos parados
     const categoriaActual = document.body.getAttribute('data-categoria');
 
     if (!categoriaActual) {
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // 2. Hacer fetch al JSON
+    // Hacer fetch al JSON
     fetch('../libros.json')
         .then(response => {
             if (!response.ok) throw new Error("No se pudo cargar el archivo central de la biblioteca");
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(todoElCatalogo => {
             
-            // 3. LA MAGIA: Filtramos el JSON gigante dejando solo la clasificación de esta página
+            // Filtramos el JSON gigante dejando solo la clasificación de esta página
             const librosFiltrados = todoElCatalogo.filter(libro => libro.categoria === categoriaActual);
 
             if (librosFiltrados.length === 0) {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let htmlSlides = "";
 
-            // 4. Construimos el carrusel solo con los libros filtrados
+            // Construimos el carrusel solo con los libros filtrados
             librosFiltrados.forEach(libro => {
                 htmlSlides += `
                     <div class="swiper-slide">
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             contenedor.innerHTML = htmlSlides;
 
-            // 5. Encendemos el Swiper 3D
+            // Encendemos el Swiper 3D
             inicializarCarrusel();
         })
         .catch(error => console.error('Error en el catálogo dinámico:', error));

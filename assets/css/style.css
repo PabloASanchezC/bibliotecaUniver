@@ -254,7 +254,7 @@ h2 {
     box-shadow: 0 0 20px var(--sombra-fuerte);
     padding: 40px;
     text-align: center;
-    border-radius: 8px; /* Un ligero borde redondeado para suavizar las tarjetas 3D */
+    border-radius: 8px; 
 }
 
 .icons {
@@ -274,11 +274,11 @@ h2 {
     width: 120px;
 }
 
-/* Modificamos esta clase para no chocar con el grid del inicio */
+
 .swiper-slide .product-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Evita que el texto y la imagen se estiren feo */
+    align-items: flex-start; /* Evita que el texto y la imagen se estiren */
 }
 
 .swiper-slide .product-txt {
