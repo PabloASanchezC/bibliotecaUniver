@@ -33,8 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="swiper-slide">
                         <div class="icons"> 
                             <a href="../index.html" style="color: inherit;"><i class="fa-solid fa-circle-arrow-left"></i></a>
-                            <img src="images/logo.png" alt="Logo">
-                            <i class="fa-regular fa-heart"></i>
                         </div>
                         <div class="product-content">
                             <div class="product-txt">
